@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5 { color: var(--navy);
   padding: .5rem 1rem;
   transition: all .3s;
   margin: 0 .25rem;
+  font-size: 1.1rem;
 }
 .navbar .nav-link:hover { 
   color: #fff;
@@ -276,6 +277,32 @@ footer h5 { color: #fff; font-size: 1rem; }
 .footer-brand { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
 .footer-brand img { width: clamp(3rem, 8vw, 4.5rem); height: clamp(3rem, 8vw, 4.5rem); flex: 0 0 auto; object-fit: contain; }
 .footer-brand h5 { margin: 0; }
+
+/* Footer Social */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: var(--blue);
+  transform: translateY(-3px);
+}
+
 footer a { 
   color: rgba(255, 255, 255, .75); 
   text-decoration: none;
