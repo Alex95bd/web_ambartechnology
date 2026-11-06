@@ -205,7 +205,46 @@ section { padding: 5rem 0; }
 }
 
 
-.about-item i { font-size: 1.6rem; color: var(--cyan); 
+.about-item i { font-size: 1.6rem; color: var(--cyan); }
+
+/* About Founder */
+.about-founder {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(10, 37, 64, .08);
+  border-left: 4px solid var(--blue);
+}
+
+.founder-img {
+  width: 200px;
+  height: auto;
+  min-height: 200px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  display: block;
+}
+
+.about-founder > div {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-founder h4 {
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-founder p {
+  font-size: 0.95rem;
 }
 
 /* Steps */
@@ -279,4 +318,12 @@ footer li { padding: .15rem 0; }
     font-size: 1rem; 
   }
   footer a { word-break: break-word; }
+  .about-founder {
+    flex-direction: column;
+  }
+  .founder-img {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+  }
 }
