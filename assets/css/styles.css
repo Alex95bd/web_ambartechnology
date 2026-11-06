@@ -15,7 +15,8 @@ html {
 
 body { 
   font-family: "Inter", system-ui, sans-serif; 
-  color: var(--dark); line-height: 1.65; 
+  color: var(--dark); 
+  line-height: 1.65;
 }
 h1, h2, h3, h4, h5 { color: var(--navy); 
   font-weight: 700; 
@@ -79,6 +80,20 @@ h1, h2, h3, h4, h5 { color: var(--navy);
 .navbar-toggler-icon { filter: invert(1); }
 @media (max-width: 991.98px) {
   .navbar-collapse { background: var(--navy); border-radius: 1rem; padding: 1rem; margin-top: .75rem; }
+  .navbar { padding: 0.45rem 0; }
+}
+@media (max-width: 576px) {
+  .navbar-brand img { 
+    width: clamp(3.5rem, 10vw, 4.5rem); 
+    height: clamp(3.5rem, 10vw, 4.5rem); 
+  }
+  .navbar-brand .navbar-brand-title { font-size: 0.85rem; }
+  .navbar-brand .navbar-brand-subtitle { font-size: 0.45rem; }
+  .navbar { padding: 0.4rem 0; }
+  .container { max-width: 100%; padding-left: 1rem !important; padding-right: 1rem !important; }
+  footer { padding: 2rem 0 1rem; }
+  footer h5 { font-size: 0.9rem; }
+  footer p { font-size: 0.85rem; }
 }
 @media (max-width: 380px) {
   .navbar-brand { gap: .4rem; }
@@ -88,7 +103,16 @@ h1, h2, h3, h4, h5 { color: var(--navy);
 }
 
 /* Buttons */
-.btn { border-radius: 50rem; font-weight: 600; padding: .7rem 1.5rem; transition: all .25s; }
+.btn { 
+  border-radius: 50rem; 
+  font-weight: 600; 
+  padding: .7rem 1.5rem; 
+  transition: all .25s;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn-wa { background: var(--wa); color: #fff; border: 0; }
 .btn-wa:hover { background: #1ebe5a; color: #fff; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37, 211, 102, .35); }
 .btn-outline-light:hover { color: var(--navy); }
@@ -188,7 +212,13 @@ footer h5 { color: #fff; font-size: 1rem; }
 .footer-brand { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
 .footer-brand img { width: clamp(3rem, 8vw, 4.5rem); height: clamp(3rem, 8vw, 4.5rem); flex: 0 0 auto; object-fit: contain; }
 .footer-brand h5 { margin: 0; }
-footer a { color: rgba(255, 255, 255, .75); text-decoration: none; }
+footer a { 
+  color: rgba(255, 255, 255, .75); 
+  text-decoration: none;
+  display: block;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 footer a:hover { color: var(--cyan); }
 footer ul { list-style: none; padding: 0; }
 footer li { padding: .15rem 0; }
@@ -212,5 +242,17 @@ footer li { padding: .15rem 0; }
 }
 @media (max-width: 767.98px) { 
   section { padding: 3.5rem 0; } 
-  .hero { padding-top: 7rem; } 
+  .hero { padding-top: 7rem; }
+  .container { padding-left: 1rem; padding-right: 1rem; }
+  .btn { 
+    padding: .5rem 1rem; 
+    font-size: .9rem;
+    white-space: normal;
+    flex-wrap: wrap;
+  }
+  .btn-lg-wa { 
+    padding: 0.8rem 1.5rem; 
+    font-size: 1rem; 
+  }
+  footer a { word-break: break-word; }
 }
