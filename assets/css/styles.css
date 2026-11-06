@@ -217,12 +217,13 @@ section { padding: 5rem 0; }
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(10, 37, 64, .08);
   border-left: 4px solid var(--blue);
+  max-width: 420px;
 }
 
 .founder-img {
-  width: 200px;
+  width: 140px;
   height: auto;
-  min-height: 200px;
+  min-height: 140px;
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
@@ -230,7 +231,7 @@ section { padding: 5rem 0; }
 }
 
 .about-founder > div {
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,12 +240,12 @@ section { padding: 5rem 0; }
 .about-founder h4 {
   color: var(--navy);
   font-weight: 700;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .about-founder p {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 /* Steps */
@@ -320,10 +321,11 @@ footer li { padding: .15rem 0; }
   footer a { word-break: break-word; }
   .about-founder {
     flex-direction: column;
+    max-width: 100%;
   }
   .founder-img {
     width: 100%;
     height: auto;
-    min-height: 250px;
+    min-height: 180px;
   }
 }
