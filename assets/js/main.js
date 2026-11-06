@@ -68,7 +68,7 @@ function initReveal() {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-brand]").forEach((el) => (el.textContent = CONFIG.brandName));
-  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = "2025";
   initWhatsAppLinks();
   initCtaMessage();
   initNavbar();
